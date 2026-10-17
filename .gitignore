@@ -45,7 +45,9 @@ wandb/
 runs/
 
 # Jupyter Notebooks checkpoints and outputs
-*.ipynb # we're using Jupytext to track our changes, there's no need to store Jupyter notebook files.
+## we're using Jupytext to track our changes, there's no need to store Jupyter notebook files.
+*.ipynb
+
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 *.pyz
