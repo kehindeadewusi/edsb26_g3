@@ -1,0 +1,141 @@
+# ==============================================================================
+# ML & DATA SCIENCE COMPONENTS
+# ==============================================================================
+
+# Data storage (Never commit large raw/processed datasets)
+data/
+*.csv
+*.tsv
+*.json
+*.xml
+*.parquet
+*.feather
+*.hdf5
+*.h5
+*.pickle
+*.pkl
+*.npy
+*.npz
+
+# Model checkpoints, weights, and serialized pipelines
+models/
+checkpoints/
+*.joblib
+*.pkl
+*.pickle
+*.pth
+*.pt
+*.onnx
+*.pb
+*.tflite
+*.ckpt
+*.weights
+*.h5
+
+# Large Object Storage & Versioning artifacts (DVC, etc.)
+# If using DVC, track .dvc files but ignore the underlying data cache
+.dvc/cache/
+.dvc/tmp/
+
+# Experiment tracking & visualization logs
+lightning_logs/
+mlruns/
+wandb/
+.tensorboard/
+runs/
+
+# Jupyter Notebooks checkpoints and outputs
+*.ipynb # we're using Jupytext to track our changes, there's no need to store Jupyter notebook files.
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.pyz
+
+# Generated evaluation reports, plots, and figures
+reports/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+
+# ==============================================================================
+# STANDARD PYTHON COMPONENTS
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Anaconda / Miniconda environment artifacts
+.condarc
+conda-meta/
+
+
+# ==============================================================================
+# VIRTUAL ENVIRONMENTS
+# ==============================================================================
+
+# Local isolated dependencies environment folders
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# ==============================================================================
+# CONFIGURATIONS & ENVIRONMENT SECRETS
+# ==============================================================================
+
+# API Keys, database passwords, and credentials (CRITICAL)
+.env
+.env.*
+!.env.example
+secret.yaml
+secrets.json
+.gitattributes
+
+
+# ==============================================================================
+# IDE, EDITORS, & OS ARTIFACTS
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
