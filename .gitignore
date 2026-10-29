@@ -21,8 +21,6 @@ data/
 models/
 checkpoints/
 *.joblib
-*.pkl
-*.pickle
 *.pth
 *.pt
 *.onnx
@@ -30,7 +28,6 @@ checkpoints/
 *.tflite
 *.ckpt
 *.weights
-*.h5
 
 # Large Object Storage & Versioning artifacts (DVC, etc.)
 # If using DVC, track .dvc files but ignore the underlying data cache
@@ -72,7 +69,6 @@ __pycache__/
 *.so
 
 # C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -118,12 +114,10 @@ venv.bak/
 # ==============================================================================
 
 # API Keys, database passwords, and credentials (CRITICAL)
-.env
 .env.*
 !.env.example
 secret.yaml
 secrets.json
-.gitattributes
 
 
 # ==============================================================================
@@ -137,6 +131,9 @@ secrets.json
 
 # PyCharm / IntelliJ
 .idea/
+
+# Ruff / tooling caches
+.ruff_cache/
 
 # Operating System files
 .DS_Store

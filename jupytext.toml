@@ -1,1 +1,4 @@
-formats = "ipynb,py:percent"
+# Pair notebooks: .ipynb under notebooks/, .py (percent) mirrors under scripts/.
+# From the notebook side:  notebooks/01_explore.ipynb  <->  scripts/01_explore.py
+# NOTE: prefix roots must be used in either none or all of the paired formats.
+formats = "notebooks///ipynb,scripts///py:percent"
