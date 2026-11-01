@@ -4,7 +4,7 @@
     - [x] add a pre-commit hook for Jupytext, to keep .py and .ipynb modules in sync (`.pre-commit-config.yaml`)
     - [x] add reformatting with black, isort — via ruff (`ruff` + `ruff-format` hooks, isort rules in `pyproject.toml`)
     - [x] configure notebooks and .py modules to different folders (`jupytext.toml`: `.ipynb` in `notebooks/`, `.py` mirrors and cell scripts in `scripts/`; `sandbox.py` moved there)
-- first cut: 
+- first cut:
     - [x] training data orchestration: join the data for telco
     - [x] run fg-data-profiling for exploratory data analysis
     - [x] scaffold a first classification model: good for getting the CICD going
@@ -96,4 +96,4 @@ Appendix B of Aurélien Géron's "Hands-On Machine Learning with Scikit-Learn, K
 - Write monitoring code to detect model drift or performance degradation.
 - Set up automated or periodic data pipelines and model retraining.
 
-Reference source: Aurelien Géron's Hands-On ML Appendix B on O'Reilly 
+Reference source: Aurelien Géron's Hands-On ML Appendix B on O'Reilly

@@ -19,7 +19,7 @@ The business objectives of this solution is to predict Telco churn of customers 
 Additionally, understanding churn characters will help to know where to invest marketing spend to retain the identified classes of customers with high probabilities of churning.
 
 ## Assumptions
-- Output that matters is a Yes/No 
+- Output that matters is a Yes/No
 
 ## Problem Framing
 - Supervised learning: We have a labelled dataset.
